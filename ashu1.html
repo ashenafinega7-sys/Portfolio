@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ashenafi Nega — Portfolio</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="ashenafi.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <meta name="description" content="Portfolio of Ashenafi Nega — web developer / designer." />
+
+</head>
+<body>
+  <header>
+    <a href="#home" class="logo" aria-label="Ashenafi Nega home">
+      <span class="dot" aria-hidden="true"></span>
+      <span>Ashenafi</span>
+    </a>
+
+    <nav aria-label="Primary">
+      <ul id="navlinks">
+        <li><a href="#home" data-target="home" class="nav-link active">Home</a></li>
+        <li><a href="#about" data-target="about" class="nav-link">About</a></li>
+        <li><a href="#services" data-target="services" class="nav-link">Services</a></li>
+        <li><a href="#portfolio" data-target="portfolio" class="nav-link">Portfolio</a></li>
+        <li><a href="#contact" data-target="contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="controls">
+      <button class="toggle" id="themeToggle" aria-pressed="false" title="Toggle dark mode">
+        <svg class="sun" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+          <circle cx="12" cy="12" r="4" fill="currentColor"></circle>
+        </svg>
+      </button>
+
+      <a class="btn btn-ghost" href="#contact">Hire me</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="home" class="hero" aria-labelledby="home-heading">
+      <div class="hero-content">
+        <p class="caps">Hello, I'm</p>
+        <h1 id="home-heading">Ashenafi Nega — <span class="typing" id="typing"></span></h1>
+        <p class="lead muted">I build clean, accessible, and high-performance web experiences. I focus on frontend development, UI design, and thoughtful interactions that help products shine.</p>
+
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#portfolio">View Work</a>
+          <a class="btn btn-ghost" href="#about">About Me</a>
+        </div>
+      </div>
+      <div class="hero-photo-wrap">
+        <img class="hero-photo" id="heroPhoto" alt="Ashenafi Nega profile photo" src="photo.jpg">
+      </div>
+    </section>
+
+    <section id="about" aria-labelledby="about-heading">
+      <h2 id="about-heading" class="caps">About</h2>
+      <div class="about-grid">
+        <div>
+          <div class="card">
+            <h3 style="margin-top:0">A bit about me</h3>
+            <p class="muted">I create simple, useful and delightful web interfaces. I enjoy transforming complex problems into friendly, performant experiences.</p>
+            <p class="muted"><strong>Specialties:</strong> HTML, CSS, JavaScript, Responsive Design, Accessibility, Performance Optimization.</p>
+          </div>
+
+          <div style="height:18px"></div>
+
+          <div class="card">
+            <h4 style="margin:0 0 8px 0">Skills</h4>
+            <div class="skills-list" id="skillsList">
+              <div class="skill" data-level="92">
+                <div class="meta"><span>HTML &amp; Semantics</span><span>92%</span></div>
+                <div class="progress"><i></i></div>
+              </div>
+              <div class="skill" data-level="90">
+                <div class="meta"><span>CSS &amp; Responsive</span><span>90%</span></div>
+                <div class="progress"><i></i></div>
+              </div>
+              <div class="skill" data-level="88">
+                <div class="meta"><span>JavaScript (ES6+)</span><span>88%</span></div>
+                <div class="progress"><i></i></div>
+              </div>
+              <div class="skill" data-level="80">
+                <div class="meta"><span>UI / Interaction</span><span>80%</span></div>
+                <div class="progress"><i></i></div>
+              </div>
+              <div class="skill" data-level="75">
+                <div class="meta"><span>Performance &amp; Accessibility</span><span>75%</span></div>
+                <div class="progress"><i></i></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <aside>
+          <div class="card center" style="flex-direction:column;gap:12px">
+            <img src="photo.jpg" alt="Profile photo placeholder" style="width:120px;height:120px;border-radius:999px;object-fit:cover;">
+            <div style="text-align:center">
+              <div style="font-weight:700">Ashenafi Nega</div>
+              <div class="muted">Frontend Developer</div>
+            </div>
+
+            <div style="display:flex;gap:8px;margin-top:8px">
+              <a class="btn btn-ghost" href="#contact">Work with me</a>
+            </div>
+          </div>
+        </aside>
+      </div>
+    
+    </section>
+
+     <section id="services" aria-labelledby="services-heading">
+      <h2 id="services-heading" class="caps">Services</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <h3>UI/UX Design <span role="img" aria-label="sparkles">✨</span></h3>
+          <p class="muted">Crafting beautiful and intuitive user interfaces that are a joy to use. I focus on creating a seamless user journey from start to finish.</p>
+        </div>
+        <div class="service-card">
+          <h3>Frontend Development <span role="img" aria-label="laptop">💻</span></h3>
+          <p class="muted">Bringing designs to life with clean, efficient, and semantic code. I specialize in HTML, CSS, and modern JavaScript to build fast websites.</p>
+        </div>
+        <div class="service-card">
+          <h3>Website Optimization <span role="img" aria-label="rocket">🚀</span></h3>
+          <p class="muted">Improving site performance and accessibility to ensure your website is fast for every user and accessible to all, regardless of their abilities.</p>
+        </div>
+      </div>
+    </section>
+
+<section id="portfolio" aria-labelledby="portfolio-heading">
+  <h2 id="portfolio-heading" class="caps">Portfolio</h2>
+<section class="projects">
+  <div class="container">
+    <h2>My Projects</h2>
+    <div class="project-grid">
+
+      <!-- Project Card 1 -->
+      <a href="https://example.com/project-one" target="_blank" class="project-card">
+        <div class="project-image">
+          <img src="https://via.placeholder.com/600x400.png?text=Project+One" alt="Project One thumbnail">
+        </div>
+        <div class="project-content">
+          <h3 class="project-title">Project Title One</h3>
+          <p class="project-description">
+            A concise description of the project, the technologies used, and the goal. 
+            Click to view the live project.
+          </p>
+        </div>
+      </a>
+
+      <!-- Project Card 2 -->
+      <a href="https://tena-organic-vermicompost-website.vercel.app/#top" class="project-card">
+        <div class="project-image">
+          <img src="t.png" alt="Project Two thumbnail">
+        </div>
+        <div class="project-content">
+          <h3 class="project-title">Project Title Two</h3>
+          <p class="project-description">
+            A brief summary of this project and its features. 
+            Highlight the key aspects of the work.
+          </p>
+        </div>
+      </a>
+      
+      <!-- Project Card 3 -->
+      <a href="https://example.com/project-three" target="_blank" class="project-card">
+        <div class="project-image">
+          <img src="https://via.placeholder.com/600x400.png?text=Project+Three" alt="Project Three thumbnail">
+        </div>
+        <div class="project-content">
+          <h3 class="project-title">Project Title Three</h3>
+          <p class="project-description">
+            This section details the purpose and outcome of the project. 
+            Talk about the challenges and solutions.
+          </p>
+        </div>
+      </a>
+
+      <!-- Add more project cards as needed -->
+      
+    </div>
+  </div>
+</section>
+
+    <section id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading" class="caps">Contact</h2>
+      <div class="contact-grid">
+
+        <div>
+          <div class="card">
+            <p class="muted">Want to work together? Fill out the form and I'll get back to you.</p>
+
+            <form id="contactForm" novalidate>
+              <div style="display:grid;gap:12px;margin-top:12px">
+                <div class="row">
+                  <input type="text" id="name" name="name" placeholder="Your name" aria-label="Name" required>
+                  <input type="email" id="email" name="email" placeholder="Email" aria-label="Email" required>
+                </div>
+                <textarea id="message" name="message" placeholder="Message" aria-label="Message" required></textarea>
+
+                <div style="display:flex;gap:8px;align-items:center">
+                  <button type="submit" class="btn btn-primary">Send Message</button>
+                  <div id="formMsg" class="muted" aria-live="polite"></div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <aside>
+          <div class="card">
+            <h4 style="margin-top:0">Get in touch</h4>
+            <p class="muted">Email: <a href="mailto:ashenafi@example.com" style="color:var(--text)">ashenafinega@gmail.com</a></p>
+            <p class="muted" >Phone Number: 0975178336</p>
+            <p class="muted">Location: Addis Ababa, Ethiopia</p>
+            <div style="height:8px"></div>
+            <div class="muted">Or reach out on social links below </div>
+            <div class="social-links">
+  <!-- Facebook Icon -->
+  <a href="https://www.facebook.com/your-profile" target="_blank" aria-label="Facebook Profile">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+
+  <!-- LinkedIn Icon -->
+  <a href="https://www.linkedin.com/in/your-profile" target="_blank" aria-label="LinkedIn Profile">
+    <i class="fab fa-linkedin-in"></i>
+  </a>
+
+  <!-- Telegram Icon -->
+  <a href="https://t.me/ashuti1" target="_blank" aria-label="Telegram Profile">
+    <i class="fab fa-telegram-plane"></i>
+  </a>
+</div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <footer>
+      Built with ❤️ using modern HTML, CSS & JavaScript — © <span id="year"></span> Ashenafi Nega
+    <div class="social-links">
+  <!-- Facebook Icon -->
+  <a href="https://www.facebook.com/your-profile" target="_blank" aria-label="Facebook Profile">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+
+  <!-- LinkedIn Icon -->
+  <a href="https://www.linkedin.com/in/your-profile" target="_blank" aria-label="LinkedIn Profile">
+    <i class="fab fa-linkedin-in"></i>
+  </a>
+
+  <!-- Telegram Icon -->
+  <a href="https://t.me/your-profile" target="_blank" aria-label="Telegram Profile">
+    <i class="fab fa-telegram-plane"></i>
+  </a>
+</div>
+    </footer>
+  </main>
+
+  <script>
+  // ---- Lightweight helper utilities ----
+  const $ = s => document.querySelector(s);
+  const $$ = s => Array.from(document.querySelectorAll(s));
+
+  // Set year
+  $('#year').textContent = new Date().getFullYear();
+
+  // -------------------------
+  // Theme toggle (dark mode)
+  // -------------------------
+  const body = document.documentElement;
+  const themeToggle = document.getElementById('themeToggle');
+  const heroPhoto = $('#heroPhoto');
+
+  function applyTheme(theme){
+    if(theme === 'dark') {
+      body.classList.add('dark');
+      themeToggle.setAttribute('aria-pressed','true');
+      heroPhoto.src = 'photo-dark.png';
+    } else {
+      body.classList.remove('dark');
+      themeToggle.setAttribute('aria-pressed','false');
+      heroPhoto.src = 'photo-light.png';
+    }
+  }
+
+  // initialize theme from localStorage or system preference
+  (function initTheme(){
+    try{
+      const saved = localStorage.getItem('ash_theme');
+      if(saved) { applyTheme(saved); }
+      else {
+        const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        applyTheme(prefersDark ? 'dark' : 'light');
+      }
+    } catch(e){ console.warn('Theme init error', e); }
+  })();
+
+  themeToggle.addEventListener('click', () => {
+    const isDark = body.classList.contains('dark');
+    const next = isDark ? 'light' : 'dark';
+    applyTheme(next);
+    try{ localStorage.setItem('ash_theme', next); } catch(e){}
+  });
+
+  // -------------------------
+  // Typing effect for hero
+  // -------------------------
+  const typingEl = document.getElementById('typing');
+  const phrases = ['Frontend Developer', 'UI & Interaction Designer', 'Performance Enthusiast', 'Accessibility Advocate'];
+  let tIndex = 0, charIndex = 0, typingForward = true;
+
+  function typeLoop(){
+    const current = phrases[tIndex];
+    if(typingForward){
+      charIndex++;
+      typingEl.textContent = current.slice(0,charIndex);
+      if(charIndex >= current.length){
+        typingForward = false;
+        setTimeout(typeLoop, 1100);
+        return;
+      }
+    } else {
+      charIndex--;
+      typingEl.textContent = current.slice(0,charIndex);
+      if(charIndex <= 0){
+        typingForward = true;
+        tIndex = (tIndex+1) % phrases.length;
+      }
+    }
+    setTimeout(typeLoop, typingForward ? 90 : 30);
+  }
+  setTimeout(typeLoop, 600);
+
+  // -------------------------
+  // Smooth scroll offset for anchored links (compensate for fixed header)
+  // -------------------------
+  const navLinks = $$('.nav-link');
+  function scrollToId(id){
+    const el = document.getElementById(id);
+    if(!el) return;
+    const topOffset = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--nav-height')) || 68;
+    const rect = el.getBoundingClientRect();
+    const target = window.scrollY + rect.top - topOffset + 8;
+    window.scrollTo({top: target, behavior:'smooth'});
+  }
+  navLinks.forEach(a => {
+    a.addEventListener('click', e => {
+      e.preventDefault();
+      const id = a.getAttribute('data-target');
+      scrollToId(id);
+      navLinks.forEach(n=>n.classList.remove('active'));
+      a.classList.add('active');
+    });
+  });
+
+  const sections = $$('#main section');
+  const navMap = {};
+  navLinks.forEach(link => navMap[link.getAttribute('data-target')] = link);
+
+  const obsOptions = { root: null, rootMargin: '0px', threshold: 0.45 };
+  const sectionObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        const id = entry.target.id;
+        if(navMap[id]){
+          navLinks.forEach(n => n.classList.remove('active'));
+          navMap[id].classList.add('active');
+        }
+      }
+    });
+  }, obsOptions);
+
+  sections.forEach(s => sectionObserver.observe(s));
+
+  // -------------------------
+  // Skills progress animation using IntersectionObserver
+  // -------------------------
+  const skills = $$('.skill');
+  const skillObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        const el = entry.target;
+        const level = el.getAttribute('data-level') || 0;
+        const bar = el.querySelector('.progress > i');
+        bar.style.width = level + '%';
+        observer.unobserve(el);
+      }
+    });
+  }, {threshold: 0.35});
+  skills.forEach(s => skillObserver.observe(s));
+
+  // -------------------------
+  // Simple contact form validation and submission
+  // -------------------------
+  const contactForm = $('#contactForm');
+  const formMsg = $('#formMsg');
+
+  function isEmail(email){
+    return /^[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/i.test(email);
+  }
+
+  contactForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    formMsg.textContent = '';
+    const name = $('#name').value.trim();
+    const email = $('#email').value.trim();
+    const message = $('#message').value.trim();
+
+    if(!name){ formMsg.textContent = 'Please enter your name.'; return; }
+    if(!email || !isEmail(email)){ formMsg.textContent = 'Please enter a valid email.'; return; }
+    if(!message || message.length < 10){ formMsg.textContent = 'Message should be at least 10 characters.'; return; }
+
+    const btn = contactForm.querySelector('button[type="submit"]');
+    btn.disabled = true;
+    const oldBtnText = btn.textContent;
+    btn.textContent = 'Sending...';
+
+    try {
+      const response = await fetch('/submit-contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ name, email, message }),
+      });
+
+      if (response.ok) {
+        formMsg.textContent = 'Thanks — your message has been received!';
+        contactForm.reset();
+      } else {
+        formMsg.textContent = 'Oops! Something went wrong. Please try again later.';
+      }
+    } catch (error) {
+      console.error('Submission error:', error);
+      formMsg.textContent = 'Failed to send message. Check your connection.';
+    } finally {
+      btn.disabled = false;
+      btn.textContent = oldBtnText;
+    }
+  });
+
+  // -------------------------
+  // Accessibility: allow keyboard focus to show subtle elevation
+  // -------------------------
+  $$('.service-card, .project-card').forEach(t => {
+    t.addEventListener('focus', () => t.style.transform = 'translateY(-8px)');
+    t.addEventListener('blur', () => t.style.transform = '');
+  });
+  </script>
+</body>
+</html>
